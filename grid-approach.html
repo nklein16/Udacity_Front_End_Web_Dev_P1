@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio - Grid Approach</title>
+
+    <style>
+
+        /* Left area with color swatches */
+        .colored-boxes {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-column-gap: 3em;
+        }
+        .col-2 {
+            margin: 7em 5em 0em 10em;
+            /* margin-top: 10em; */
+        }
+        .swatch {
+            width: 75px;
+            height: 75px;
+        }
+
+        .right {
+            /* background: #ddd 1em; */
+            margin: 3em 7em;
+        }
+
+        .first {
+            background-color:#02b3e4;
+
+        }
+    
+        .second {
+            background-color:#2d3c49;
+        }
+    
+        .third {
+            background-color:#7d97ad;
+        }
+
+        .color-code {
+            
+            /* margin-top: 3em; */
+            /* margin-top: 0; */
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 1.8em;
+            color:darkslategrey;
+
+        }
+
+
+        /* Header area */
+        .header {
+            display: grid;
+            grid-template-columns: 20% 80%;
+        }
+
+        .name-and-title {
+            padding: 2.5em;
+            /* display: block;
+            display: inline; */
+        }
+
+        #name {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 2em;
+        }
+
+        #title {
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="row"> -->
+        <div class="col-2">
+            <div class="colored-boxes d-flex">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vitae mollitia minima ullam reiciendis cupiditate laborum architecto et impedit maxime veniam, modi facilis consequatur consequuntur? Ipsa tenetur mollitia nostrum totam! -->
+                <div class="swatch first"></div>
+                <p class="color-code">#02b3e4</p>
+                <div class="swatch second"></div>
+                <p class="color-code">#2d3c49</p>
+                <div class="swatch third"></div>
+                <p class="color-code">#7d97ad</p>
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="header">
+                <div class="col-2">
+                    <img srcset="img/udacity-logo.png" alt="Udacity Logo" height="90" width="90" class="top-image">
+                </div>
+                <!-- <div class="col-10"> -->
+                <div class="name-and-title">
+                    <div id="name">
+                        Nathaniel Klein
+                    </div>
+                    <div id="title">
+                            Data Engineer
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In incidunt dolore illo placeat id, quod asperiores eius sint iusto quis. Nam libero labore quasi quisquam, quo repellendus dolorum saepe, iusto corporis perspiciatis harum quae voluptatibus beatae repudiandae. Corrupti necessitatibus placeat porro esse dolor, explicabo omnis perspiciatis? Quaerat amet ducimus nemo cupiditate, doloribus aperiam atque esse facere praesentium accusamus enim voluptatibus, saepe aut sequi, culpa mollitia nisi adipisci suscipit exercitationem velit eveniet? Deleniti, explicabo modi. Quia, vel assumenda. Excepturi, corporis ex.
+        </div>
+        <!-- Top-level row -->
+        <!-- </div> -->
+    </div>
+
+</body>
+</html>

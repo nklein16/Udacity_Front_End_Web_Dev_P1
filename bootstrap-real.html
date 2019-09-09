@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href=css/styles_new.css> -->
+    <!-- <link rel="stylesheet" media="screen and (min-width:500px)" href=css/"styles_new".css> -->
+
+
+
+    <style>
+    
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .left-panel {
+            padding: 20em 2em 0 5em;
+            /* width: 500px;
+            height: 100%;
+            position: absolute;
+            transform: translate(-300px, 0);
+            transition: transform 0.3s ease;
+            background-color:lightskyblue; */
+        }
+
+        /* .left-panel.open {
+            transform: translate(0,0);
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .left-panel {
+                position: relative;
+                transform: translate(0,0);
+            }
+
+            body {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+
+            .main-content {
+                width: auto;
+                flex-grow: 1;
+            }
+        }
+         */
+        /* Social Icons / Swatches in the left panel */
+        .icon {
+            width: 75px;
+            height: 75px;
+            margin-bottom: 3em;
+        }
+
+        /* .first {
+            background-color:#02b3e4;
+        }
+    
+        .second {
+            background-color:#2d3c49;
+        }
+    
+        .third {
+            background-color:#7d97ad;
+        } */
+
+        /* .color-code {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 1.4em;
+            margin-bottom: 1em;
+            color: #2d3c49;
+        } */
+
+        /* .v-line {
+            height: 95%;
+            width: .10em;
+            background-color: slategray;
+            margin: 3em 1em 0em 0em;
+        } */
+
+        .main-content {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 1em;
+        }
+
+        .header-row {
+            padding: 1.5em 0;
+        }
+
+        .top-image {
+            margin: 0em, 0em, 6em, 0em;
+        }
+
+        .name-and-title {
+            margin-top: 3em;
+            margin-right: 5em;
+        }
+
+        #name {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 3.5em;
+        }
+
+        #title {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em;
+            margin-top: 0;
+            justify-content:end;
+        }
+
+        .line {
+            display:flex;
+            margin: 0em 3em 1.5em 0em;
+            height: .25em;
+            width: 95%;
+            background-color: slategray;
+        }
+        
+        .representing-image {
+            padding: 1.5em 0;
+            height: 95%;
+            width: 95%;
+            margin-top: -1.5em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .work-text {
+            font-size: 3em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:#7d97ad;
+        }
+
+        .featured-work {
+            flex-wrap: wrap;
+        }
+        
+        .items {
+            width: 350px;
+            height: 300px;
+            margin: 1em 1em;
+            margin-bottom: 3em;
+        }
+
+        .img-item {
+            width: 300px;
+            height: 250px;
+        }
+
+        .h2 {
+            align-self: center;
+        }
+
+        .figure {
+            align-content: center;
+        }
+
+        .credit {
+            /* height: 100%; */
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-container {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 465px){
+            #name {
+                font-size: 1em;
+                font-weight: bold;
+            }
+            #title {
+                font-size: 1em;
+                font-style: italic;
+            }
+            .work-text {
+                font-size: 1.5em;
+            }
+
+            .left-panel {
+                flex: wrap;
+            }
+
+            /* .main-content {
+                display: flex;
+                justify-content: center;
+            } */
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 690px){
+
+            /* .left-panel {
+                visibility: hidden;
+            } */
+        }
+
+        @media screen and (max-width: 768px){
+            
+            .header-row {
+                /* align-content: center; */
+                /* align-items: center; */
+                justify-content: center;
+                text-align: center;
+            }
+
+            .name-and-title {
+                align-items: center;
+                text-align:center;
+                justify-content: center;
+            }
+            
+            /* #name {
+                font-size: 1em;
+                font-weight: bold;
+            }
+            #title {
+                font-size: 1em;
+                font-style: italic;
+                
+            }
+            .work-text {
+                font-size: 1.5em;
+            } */
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 796px){
+        
+        }
+        
+        /* @media screen and (min-width: 796px) and (max-width: 1118px){
+            #name {
+                font-size: 2.5em;
+            }
+            #title {
+                font-size: 1em;
+                font-style: italic;
+            }
+        }
+
+        @media screen and (max-width: 1240px){
+            #name {
+                font-size: 2.5em;
+            }
+            #title {
+                font-size: 1em;
+                font-style: italic;
+            }
+        } */
+
+    </style>
+    <title>Project 1: My Portfolio</title>
+</head>
+<body>
+    <div class="container-fluid d-flex h-100">
+        <div class="row flex-fill">
+            <!-- <div class="col"> -->
+                <!-- Column to contain swatches -->
+                <div class="col-2 d-flex flex-column flex-fill align-items-center left-panel">
+                    <!-- <div class="list-unstyled components"> -->
+                        <div class="icon linkedIn">
+                            <a href="https://www.linkedin.com/in/nathaniel-klein-a266962/">
+                                <img srcset="img/linkedin-black.png" alt="LinkedIn icon" height="75px" width="75px">
+                            </a>
+                        </div>
+                        <div class="icon github">
+                            <a href="https://github.com/nklein16">
+                                <img srcset="img/github-sign.png" alt="Github icon" height="75px" width="75px">
+                            </a>
+                        </div>
+                        <div class="icon twitter">
+                                <a href="https://twitter.com/home">
+                                    <img srcset="img/twitter.png" alt="Twitter icon" height="75px" width="75px">
+                                </a>
+                        </div>
+                        <!-- <div class="icon first"></div>
+                        <p class="color-code">#02b3e4</p>
+                        <div class="icon second"></div>
+                        <p class="color-code">#2d3c49</p>
+                        <div class="icon third"></div>
+                        <p class="color-code">#7d97ad</p> -->
+                    <!-- </div> -->
+                </div>
+            <!-- <div class="col-1 d-flex">
+                <div class="v-line"></div>
+            </div> -->
+            <!-- </div> -->
+            <!-- Container to hold rest of page contents -->
+            <div class="col-10 d-flex flex-column main-content">
+                <!-- Inner Row to heading:  image, name and title -->
+                <!-- <div class="row internal"> -->
+                <div class="row flex-fill header-row">
+                    <!-- Image in this column -->
+                    <div class="col">
+                        <!-- <img srcset="img/udacity-logo.png" alt="Udacity Logo" width="90" height="90" class="top-image"> -->
+                        <img srcset="img/headshot.jpg" alt="Image of Nathaniel" width="300" height="240" class="top-image">
+                    </div>    
+                    
+                    <!-- Name and Title in this column -->
+                    <div class="col d-flex flex-column align-items-end justify-content-end">
+                        <div class="name-and-title align-items-end">
+                            <div class="row" id="name">
+                                Nathaniel Klein
+                            </div>
+                            <div class="row" id="title">
+                                Data Engineer
+                            </div>
+                        </div>        
+                    </div>
+
+                </div>
+                <div class="line d-flex"></div>
+                <div class="row flex-fill">
+                    <img srcset="img/MyLinkedInBackdrop.PNG" alt="Main Picture" class="representing-image">
+                    <!-- <img srcset="img/proj1pic.PNG" alt="Main Picture" width="1100" height="390" class="representing-image"> -->
+                </div>
+                <div class="row work-text">
+                    <p>Featured Work</p>
+                </div>
+                <div class="row flex-fill justify-content-center featured-work">
+                    <div class="items appify">
+                        <figure>
+                            <img class="img-item" srcset="img/Appify-1.PNG" alt="appify pic">
+                            <h2>APPIFY</h2>
+                            <figcaption>
+                                https://github.com/udacity/APPIFY
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="items sunflower">
+                        <figure>
+                            <img class="img-item" srcset="img/Sunflower-2.PNG" alt="sunflower pic">
+                            <h2>SUNFLOWER</h2>
+                            <figcaption>
+                                https://github.com/udacity/Sunflower
+                            </figcaption>
+                        </figure>  
+                    </div>
+                    <div class="items bokeh">
+                        <figure>
+                            <img class="img-item" srcset="img/Bokeh.PNG" alt="bokeh pic">
+                            <h2>BOKEH</h2>
+                            <figcaption>
+                                https://github.com/udacity/Bokeh
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div> 
+
+                <div class="credit">
+                    <div>All social icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">
+                        Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                </div>
+                <br>
+                <div class="footer-container">
+                    <p>&copy Nathaniel Klein, 2019. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- To open panel-left when clicking on the hamburger menu ( which does not yet exist!) -->
+<!-- <script>
+    menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+    });
+</script> -->
+</html>
