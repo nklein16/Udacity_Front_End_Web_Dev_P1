@@ -18,74 +18,16 @@
             height: 100%;
             width: 100%;
         }
-        
-        .left-panel {
-            padding: 20em 2em 0 5em;
-            /* width: 500px;
-            height: 100%;
-            position: absolute;
-            transform: translate(-300px, 0);
-            transition: transform 0.3s ease;
-            background-color:lightskyblue; */
+
+        /* NEW */
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .scroll-container {
             position: relative;
         }
-        /* .left-panel.open {
-            transform: translate(0,0);
-        }
-
-
-        @media screen and (max-width: 600px) {
-            .left-panel {
-                position: relative;
-                transform: translate(0,0);
-            }
-
-            body {
-                display: flex;
-                flex-flow: row nowrap;
-            }
-
-            .main-content {
-                width: auto;
-                flex-grow: 1;
-            }
-        }
-         */
-        /* Social Icons / Swatches in the left panel */
-        .icon {
-            width: 75px;
-            height: 75px;
-            margin-bottom: 3em;
-        }
-
-        /* .first {
-            background-color:#02b3e4;
-        }
-    
-        .second {
-            background-color:#2d3c49;
-        }
-    
-        .third {
-            background-color:#7d97ad;
-        } */
-
-        /* .color-code {
-            font-family:Arial, Helvetica, sans-serif;
-            font-size: 1.4em;
-            margin-bottom: 1em;
-            color: #2d3c49;
-        } */
-
-        /* .v-line {
-            height: 95%;
-            width: .10em;
-            background-color: slategray;
-            margin: 3em 1em 0em 0em;
-        } */
 
         .main-content {
             margin-left: auto;
@@ -127,32 +69,17 @@
         }
 
         .banner_message {
-            /*padding: 1.5em 0;*/
-            /*margin-top: -1.5em;*/
             margin-left: auto;
             margin-right: auto;
-            /*position: relative;*/
-            /*display: inline-flex;*/
             font-size: 30px;
             font-weight: bold;
             color: gray;
-            /*top: 275px;*/
-            /*left: 150px;*/
         }
 
         .span .banner_message {
             color: blue;
         }
         
-/*        .li {
-            padding: 1.5em 0;
-            height: 95%;
-            width: 95%;
-            margin-top: -1.5em;
-            margin-left: auto;
-            margin-right: auto;
-        }*/
-
          .representing-image {
             padding: 1.5em 0;
             height: 95%;
@@ -193,12 +120,16 @@
         }
 
         .credit {
-            /* height: 100%; */
             width: 100%;
             text-align: center;
         }
 
         .footer-container {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #footer {
             text-align: center;
             font-weight: bold;
         }
@@ -216,28 +147,11 @@
                 font-size: 1.5em;
             }
 
-            .left-panel {
-                flex: wrap;
-            }
-
-            /* .main-content {
-                display: flex;
-                justify-content: center;
-            } */
-        }
-
-        @media screen and (min-width: 300px) and (max-width: 690px){
-
-            /* .left-panel {
-                visibility: hidden;
-            } */
         }
 
         @media screen and (max-width: 768px){
             
             .header-row {
-                /* align-content: center; */
-                /* align-items: center; */
                 justify-content: center;
                 text-align: center;
             }
@@ -247,84 +161,35 @@
                 text-align:center;
                 justify-content: center;
             }
-            
-            /* #name {
-                font-size: 1em;
-                font-weight: bold;
-            }
-            #title {
-                font-size: 1em;
-                font-style: italic;
-                
-            }
-            .work-text {
-                font-size: 1.5em;
-            } */
         }
-
-        @media screen and (min-width: 768px) and (max-width: 796px){
-        
-        }
-        
-        /* @media screen and (min-width: 796px) and (max-width: 1118px){
-            #name {
-                font-size: 2.5em;
-            }
-            #title {
-                font-size: 1em;
-                font-style: italic;
-            }
-        }
-
-        @media screen and (max-width: 1240px){
-            #name {
-                font-size: 2.5em;
-            }
-            #title {
-                font-size: 1em;
-                font-style: italic;
-            }
-        } */
 
     </style>
     <title>Project 1: My Portfolio</title>
 </head>
 <body>
-    <div class="container-fluid d-flex h-100">
+    <div class="container-fluid d-flex h-100 content-wrapper">
         <div class="row flex-fill">
             <!-- <div class="col"> -->
                 <!-- Column to contain swatches -->
-                <div class="col-3 d-flex flex-column flex-fill align-items-center left-panel scroll-container">
-                    <!-- <div class="list-unstyled components"> -->
-                        <div class="icon linkedIn">
-                            <a href="https://www.linkedin.com/in/nathaniel-klein-a266962/">
-                                <img srcset="img/linkedin-black.png" alt="LinkedIn icon" height="75px" width="75px">
+                <!-- <div class="col-3 d-flex flex-column flex-fill align-items-center left-panel scroll-container">
+                    <div class="icon linkedIn">
+                        <a href="https://www.linkedin.com/in/nathaniel-klein-a266962/">
+                            <img srcset="img/linkedin-black.png" alt="LinkedIn icon" height="75px" width="75px">
+                        </a>
+                    </div>
+                    <div class="icon github">
+                        <a href="https://github.com/nklein16">
+                            <img srcset="img/github-sign.png" alt="Github icon" height="75px" width="75px">
+                        </a>
+                    </div>
+                    <div class="icon twitter">
+                            <a href="https://twitter.com/home">
+                                <img srcset="img/twitter.png" alt="Twitter icon" height="75px" width="75px">
                             </a>
-                        </div>
-                        <div class="icon github">
-                            <a href="https://github.com/nklein16">
-                                <img srcset="img/github-sign.png" alt="Github icon" height="75px" width="75px">
-                            </a>
-                        </div>
-                        <div class="icon twitter">
-                                <a href="https://twitter.com/home">
-                                    <img srcset="img/twitter.png" alt="Twitter icon" height="75px" width="75px">
-                                </a>
-                        </div>
-                        <!-- <div class="icon first"></div>
-                        <p class="color-code">#02b3e4</p>
-                        <div class="icon second"></div>
-                        <p class="color-code">#2d3c49</p>
-                        <div class="icon third"></div>
-                        <p class="color-code">#7d97ad</p> -->
-                    <!-- </div> -->
-                </div>
-            <!-- <div class="col-1 d-flex">
-                <div class="v-line"></div>
-            </div> -->
-            <!-- </div> -->
+                    </div>
+                </div> -->
             <!-- Container to hold rest of page contents -->
-            <div class="col-9 d-flex flex-column main-content">
+            <div class="col-12 d-flex flex-column main-content">
                 <!-- Inner Row to heading:  image, name and title -->
                 <!-- <div class="row internal"> -->
                 <div class="row flex-fill header-row">
@@ -397,9 +262,6 @@
                 </div> 
 
                 <div class="credit">
-                    <div>All social icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">
-                        Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-                    </div>
                     <div>
                         The R icon is licensed by Hadley Wickham and others at RStudio [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>],
                         <a href="https://commons.wikimedia.org/wiki/File:R_logo.svg">via Wikimedia Commons</a>
@@ -412,7 +274,10 @@
             </div>
         </div>
     </div>
-
+    <footer id="footer">
+        Copyright (c) 2019 Nathaniel Klein, All Rights Reserved.
+    </footer>
+    
 </body>
 <!-- To open panel-left when clicking on the hamburger menu ( which does not yet exist!) -->
 <!-- <script>
@@ -421,4 +286,5 @@
         e.stopPropagation();
     });
 </script> -->
+
 </html>
