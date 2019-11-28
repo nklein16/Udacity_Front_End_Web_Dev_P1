@@ -6,285 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <!-- <link rel="stylesheet" type="text/css" href=css/styles_new.css> -->
-    <!-- <link rel="stylesheet" media="screen and (min-width:500px)" href=css/"styles_new".css> -->
-
-
-
-    <style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     
-        html, body {
-            height: 100%;
-            width: 100%;
-        }
-
-        /* NEW */
-        .content-wrapper {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .scroll-container {
-            position: relative;
-        }
-
-        .main-content {
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 1em;
-        }
-
-        .header-row {
-            padding: 1.5em 0;
-        }
-
-        .top-image {
-            margin: 0em, 0em, 6em, 0em;
-        }
-
-        .name-and-title {
-            margin-top: 3em;
-            margin-right: 5em;
-        }
-
-        #name {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 3.5em;
-        }
-
-        #title {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 2em;
-            margin-top: 0;
-            justify-content:end;
-        }
-
-        .line {
-            display:flex;
-            margin: 0em 3em 1.5em 0em;
-            height: .25em;
-            width: 95%;
-            background-color: slategray;
-        }
-
-        .banner_message {
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 30px;
-            font-weight: bold;
-            color: gray;
-        }
-
-        .span .banner_message {
-            color: blue;
-        }
-        
-         .representing-image {
-            padding: 1.5em 0;
-            height: 95%;
-            width: 95%;
-            margin-top: -1.5em;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .work-text {
-            font-size: 3em;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color:#7d97ad;
-        }
-
-        .featured-work {
-            flex-wrap: wrap;
-        }
-        
-        .items {
-            width: 350px;
-            height: 300px;
-            margin: 1em 1em;
-            margin-bottom: 3em;
-        }
-
-        .img-item {
-            width: 300px;
-            height: 250px;
-        }
-
-        .h2 {
-            align-self: center;
-        }
-
-        .figure {
-            align-content: center;
-        }
-
-        .credit {
-            width: 100%;
-            text-align: center;
-        }
-
-        .footer-container {
-            text-align: center;
-            font-weight: bold;
-        }
-
-        #footer {
-            text-align: center;
-            font-weight: bold;
-        }
-
-        @media screen and (max-width: 465px){
-            #name {
-                font-size: 1em;
-                font-weight: bold;
-            }
-            #title {
-                font-size: 1em;
-                font-style: italic;
-            }
-            .work-text {
-                font-size: 1.5em;
-            }
-
-        }
-
-        @media screen and (max-width: 768px){
-            
-            .header-row {
-                justify-content: center;
-                text-align: center;
-            }
-
-            .name-and-title {
-                align-items: center;
-                text-align:center;
-                justify-content: center;
-            }
-        }
-
-    </style>
     <title>Project 1: My Portfolio</title>
 </head>
 <body>
+    <!-- Project requires a header, so I made the header into a navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <nav class="nav nav-pills justify-content-start">
+                <a class="nav-item nav-link" href="bootstrap-real.html">Home</a>
+                <a class="nav-item nav-link" href="">Projects</a>
+                <a class="nav-item nav-link" href="">Musings</a>
+                <a class="nav-item nav-link" href="">About Me</a>
+                <a class="nav-item nav-link" href="">Contact</a>
+            </nav>
+        </nav>
+    </header>
     <div class="container-fluid d-flex h-100 content-wrapper">
         <div class="row flex-fill">
-            <!-- <div class="col"> -->
-                <!-- Column to contain swatches -->
-                <!-- <div class="col-3 d-flex flex-column flex-fill align-items-center left-panel scroll-container">
-                    <div class="icon linkedIn">
-                        <a href="https://www.linkedin.com/in/nathaniel-klein-a266962/">
-                            <img srcset="img/linkedin-black.png" alt="LinkedIn icon" height="75px" width="75px">
-                        </a>
-                    </div>
-                    <div class="icon github">
-                        <a href="https://github.com/nklein16">
-                            <img srcset="img/github-sign.png" alt="Github icon" height="75px" width="75px">
-                        </a>
-                    </div>
-                    <div class="icon twitter">
-                            <a href="https://twitter.com/home">
-                                <img srcset="img/twitter.png" alt="Twitter icon" height="75px" width="75px">
-                            </a>
-                    </div>
-                </div> -->
-            <!-- Container to hold rest of page contents -->
+            <!-- Container to hold page contents -->
             <div class="col-12 d-flex flex-column main-content">
-                <!-- Inner Row to heading:  image, name and title -->
-                <!-- <div class="row internal"> -->
+
+                <!-- Image, name, and title row -->
                 <div class="row flex-fill header-row">
+
                     <!-- Image in this column -->
-                    <div class="col">
-                        <!-- <img srcset="img/udacity-logo.png" alt="Udacity Logo" width="90" height="90" class="top-image"> -->
-                        <img srcset="img/headshot.jpg" alt="Image of Nathaniel" width="300" height="240" class="top-image">
-                    </div>    
-                    
+                    <div class="col d-flex">
+                        <img src="img/headshot.jpg" alt="Image of Nathaniel" width="300" height="240" class="top-image">
+                    </div>
+
                     <!-- Name and Title in this column -->
-                    <div class="col d-flex flex-column align-items-end justify-content-end">
-                        <div class="name-and-title align-items-end">
+                    <div class="col d-flex flex-column align-items-flex-start justify-content-end">
+                        <div class="name-and-title">
                             <div class="row" id="name">
-                                Nathaniel Klein
+                                <p>Nathaniel Klein</p>
                             </div>
                             <div class="row" id="title">
-                                Data Engineer
+                                <p>Data Engineer</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Media Icons Here -->
+                        <div class="col d-flex flex-row justify-content-flex-start">
+                            <div class="icon linkedIn">
+                                <a href="https://www.linkedin.com/in/nathaniel-klein-a266962/">
+                                    <img src="img/linkedin-black.png" alt="LinkedIn icon" height="45" width="45">
+                                </a>
+                            </div>
+                            <div class="icon github">
+                                <a href="https://github.com/nklein16">
+                                    <img src="img/github-sign.png" alt="Github icon" height="45" width="45">
+                                </a>
+                            </div>
+                            <div class="icon twitter">
+                                <a href="https://twitter.com/home">
+                                    <img src="img/twitter.png" alt="Twitter icon" height="45" width="45">
+                                </a>
                             </div>
                         </div>        
                     </div>
-
                 </div>
+
+                <!-- Professional Caption -->
+                <div class="row d-flex caption">
+                    <p><span id="c">Connect</span><span> | </span>
+                        <span id="m">Model</span><span> | </span>
+                        <span id="a">Analyze</span><span> | </span>
+                        <span id="v">Visualize</span><span> | </span>
+                        <span id="r">Report</span>
+                    </p>
+                </div>
+                <div class="row d-flex caption">
+                    <p id="bi">"Your BI is MY concern"</p>
+                </div>
+
+                <!-- Horizontal Rule -->
                 <div class="line d-flex"></div>
+                
+                <!-- WordCloud -->
                 <div class="row d-flex">
-                    <div class="banner_message">
-                        <p>Word Cloud Created Using
-                            <span>
-                                <img srcset="img/R_logo.png" alt="R logo">
+                    <div class="banner">
+                        <p id='cloud-text'>Word Cloud Created Using
+                            <span id='r-pic'>
+                                <img src="img/R_logo.png" alt="R logo">
                             </span>
                         </p>
                     </div>
                 </div>
-                <div class="row flex-fill">
-                    <!-- <div class="li"> -->
-                        <img srcset="img/MyLinkedInBackdrop.PNG" alt="Main Picture" class="representing-image">
-                        <!-- <img srcset="img/proj1pic.PNG" alt="Main Picture" width="1100" height="390" class="representing-image"> -->
-                    <!-- </div> -->
+                <div class="row flex-fill flex-column">
+                    <img src="img/MyLinkedInBackdrop.PNG" alt="Main Picture" class="wordcloud">
                 </div>
+    
+                <!-- Featured Work -->
                 <div class="row work-text">
                     <p>Featured Work</p>
                 </div>
+
                 <div class="row flex-fill justify-content-center featured-work">
-                    <div class="items appify">
+                    <article class="items appify">
                         <figure>
-                            <img class="img-item" srcset="img/Appify-1.PNG" alt="appify pic">
+                            <img class="img-item" src="img/Appify-1.PNG" alt="appify pic">
                             <h2>APPIFY</h2>
                             <figcaption>
                                 https://github.com/udacity/APPIFY
                             </figcaption>
                         </figure>
-                    </div>
-                    <div class="items sunflower">
+                    </article>
+                    <article class="items sunflower">
                         <figure>
-                            <img class="img-item" srcset="img/Sunflower-2.PNG" alt="sunflower pic">
+                            <img class="img-item" src="img/Sunflower-2.PNG" alt="sunflower pic">
                             <h2>SUNFLOWER</h2>
                             <figcaption>
                                 https://github.com/udacity/Sunflower
                             </figcaption>
                         </figure>  
-                    </div>
-                    <div class="items bokeh">
+                    </article>
+                    <article class="items bokeh">
                         <figure>
-                            <img class="img-item" srcset="img/Bokeh.PNG" alt="bokeh pic">
+                            <img class="img-item" src="img/Bokeh.PNG" alt="bokeh pic">
                             <h2>BOKEH</h2>
                             <figcaption>
                                 https://github.com/udacity/Bokeh
                             </figcaption>
                         </figure>
-                    </div>
-                </div> 
+                    </article>
+                </div>
 
-                <div class="credit">
-                    <div>
-                        The R icon is licensed by Hadley Wickham and others at RStudio [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>],
-                        <a href="https://commons.wikimedia.org/wiki/File:R_logo.svg">via Wikimedia Commons</a>
+                <footer class="footer-container">
+                    <div class="credit">
+                        <p>
+                            All social icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">
+                            Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                        </p>
                     </div>
-                </div>
-                <br>
-                <div class="footer-container">
-                    <p>&copy Nathaniel Klein, 2019. All rights reserved.</p>
-                </div>
+                    <div>
+                        <p>
+                            The R icon is licensed by Hadley Wickham and others at RStudio [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>],
+                            <a href="https://commons.wikimedia.org/wiki/File:R_logo.svg">via Wikimedia Commons</a>
+                        </p>
+                    </div>       
+                    <p>Copyright (c) 2019 Nathaniel Klein, All Rights Reserved.</p>
+                </footer>  
             </div>
         </div>
     </div>
-    <footer id="footer">
-        Copyright (c) 2019 Nathaniel Klein, All Rights Reserved.
-    </footer>
-    
 </body>
-<!-- To open panel-left when clicking on the hamburger menu ( which does not yet exist!) -->
-<!-- <script>
-    menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-    });
-</script> -->
 
 </html>
